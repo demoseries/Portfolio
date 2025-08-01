@@ -19,7 +19,7 @@ html {
   --bg-color: #080808;
   --second-bg-color: #001005;
   --text-color: white;
-  --main-color:#0f4e6b;
+  --main-color:#00cfff;
 }
 body {
   background-color: var(--bg-color);
@@ -371,3 +371,16 @@ section {
     flex-direction: column;
   }
 }
+/* placeholder styling — put this outside any @media block */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #00cfff;
+}
+
+
